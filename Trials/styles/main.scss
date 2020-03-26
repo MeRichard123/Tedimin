@@ -15,6 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   background: url("../../assets/img/person-holding-syringe-3786166\ 1.jpg");
   background-size: cover;
@@ -71,10 +72,5 @@ footer {
   }
   .landing-page h1 {
     font-size: 2rem;
-    text-align: center;
-    justify-self: center;
-  }
-  .landing-page {
-    text-align: center;
   }
 }
