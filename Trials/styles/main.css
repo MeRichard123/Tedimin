@@ -358,6 +358,8 @@ footer a:hover {
   .landing-page h1 {
     font-size: 2rem;
     text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .landing-page {
     text-align: center;
