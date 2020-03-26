@@ -1,0 +1,42 @@
+.research {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  .microscope {
+    height: 120vh;
+    padding: 2.5rem;
+  }
+  .research__info {
+    align-self: center;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      padding: 0 2.5rem;
+    }
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.4rem;
+      padding: 0 2.5rem;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .research {
+    grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+    h1 {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    img {
+      display: none;
+    }
+    p {
+      padding: 1.1rem;
+    }
+    .dev__info {
+      padding: 0;
+    }
+  }
+}

@@ -8,3 +8,68 @@
 }
 
 @import "../../Home/styles/nav";
+
+.landing-page {
+  position: relative;
+  height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../../assets/img/person-holding-syringe-3786166\ 1.jpg");
+  background-size: cover;
+  h1 {
+    font-size: calc(4.5rem + 1vw);
+  }
+  h2 {
+    font-size: calc(3rem + 1vw);
+  }
+}
+@import "../../Home/styles/arrowscroll";
+
+@import "./dev";
+@import "./research";
+
+.stages,
+.validation {
+  margin-bottom: 4.5rem;
+  p {
+    padding: 1.2rem 4.5rem;
+    font-size: 1.4rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0 2.5rem;
+    text-align: center;
+  }
+}
+
+footer {
+  color: white;
+  background: #515151;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.2rem;
+  margin-top: auto;
+  a {
+    color: white;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: dotted;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .stages,
+  .validation {
+    p {
+      padding: 1.5rem 2.5rem;
+    }
+  }
+  .landing-page h1 {
+    font-size: 2rem;
+  }
+}

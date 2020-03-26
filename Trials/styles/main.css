@@ -71,4 +71,292 @@ nav {
             flex-direction: column;
   }
 }
+
+.landing-page {
+  position: relative;
+  height: 94vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("../../assets/img/person-holding-syringe-3786166 1.jpg");
+  background-size: cover;
+}
+
+.landing-page h1 {
+  font-size: calc(4.5rem + 1vw);
+}
+
+.landing-page h2 {
+  font-size: calc(3rem + 1vw);
+}
+
+.scrollarrow {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: translateY(-80px) translateX(-50%) rotate(45deg);
+          transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+
+.scrollarrow span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  -webkit-animation: animate 1.5s linear infinite;
+          animation: animate 1.5s linear infinite;
+}
+
+.scrollarrow span:nth-child(1) {
+  -webkit-transform: translate(-15px, -15px);
+          transform: translate(-15px, -15px);
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+
+.scrollarrow span:nth-child(2) {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+
+.scrollarrow span:nth-child(3) {
+  -webkit-transform: translate(15px, 15px);
+          transform: translate(15px, 15px);
+  -webkit-animation-delay: -0s;
+          animation-delay: -0s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+  25% {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  50%,
+  100% {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+  25% {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  50%,
+  100% {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
+}
+
+.development {
+  height: auto;
+}
+
+.development .dev__title {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 1.5rem;
+}
+
+.development .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.development .dev__image {
+  grid-area: "image";
+}
+
+.development .dev__image img {
+  height: 120vh;
+  padding: 2.5rem;
+}
+
+.development .dev__info {
+  grid-area: "text";
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 2.5rem 0;
+  padding-right: 4rem;
+}
+
+.development .dev__info h1 {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.development .dev__info p {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .development .dev__title {
+    font-size: 2.5rem;
+  }
+  .development .grid-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+  }
+  .development .grid-container h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .development .grid-container img {
+    display: none;
+  }
+  .development .grid-container .dev__info {
+    padding: 2.5rem;
+  }
+}
+
+.research {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+}
+
+.research .microscope {
+  height: 120vh;
+  padding: 2.5rem;
+}
+
+.research .research__info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.research .research__info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0 2.5rem;
+}
+
+.research .research__info p {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  padding: 0 2.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .research {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 0;
+    margin: 0;
+  }
+  .research h1 {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .research img {
+    display: none;
+  }
+  .research p {
+    padding: 1.1rem;
+  }
+  .research .dev__info {
+    padding: 0;
+  }
+}
+
+.stages,
+.validation {
+  margin-bottom: 4.5rem;
+}
+
+.stages p,
+.validation p {
+  padding: 1.2rem 4.5rem;
+  font-size: 1.4rem;
+}
+
+.stages h1,
+.validation h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0 2.5rem;
+  text-align: center;
+}
+
+footer {
+  color: white;
+  background: #515151;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.2rem;
+  margin-top: auto;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+}
+
+@media screen and (max-width: 1000px) {
+  .stages p,
+  .validation p {
+    padding: 1.5rem 2.5rem;
+  }
+  .landing-page h1 {
+    font-size: 2rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
