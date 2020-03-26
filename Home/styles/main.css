@@ -443,6 +443,12 @@ nav {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .product h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .testimonials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -499,6 +505,7 @@ nav {
 @media screen and (max-width: 900px) {
   .review {
     width: 100%;
+    margin: 0;
   }
   .review .profile {
     height: 10vh;
