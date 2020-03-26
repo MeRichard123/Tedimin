@@ -5,5 +5,6 @@ Your challenge is to design a web page that explains how new drugs are tested an
 
 - You must include: what stages there are in testing and trailing a new drug, information and pictures
 
+Science project, website for a made up drug called:
 ## Tedimin!
 
