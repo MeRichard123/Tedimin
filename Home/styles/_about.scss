@@ -51,6 +51,9 @@
 @media screen and (max-width: 700px) {
   .about {
     height: auto;
+    .title {
+      font-size: 1.5rem;
+    }
   }
   .card {
     grid-row: auto;

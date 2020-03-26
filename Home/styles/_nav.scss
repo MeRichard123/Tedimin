@@ -33,3 +33,9 @@ nav {
 .nav__cart {
   margin: 0 1.2rem 0 0;
 }
+
+@media screen and (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+}

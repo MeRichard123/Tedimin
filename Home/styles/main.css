@@ -78,6 +78,15 @@ nav {
   margin: 0 1.2rem 0 0;
 }
 
+@media screen and (max-width: 500px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .scrollarrow {
   position: absolute;
   bottom: 100px;
@@ -331,6 +340,9 @@ nav {
   .about {
     height: auto;
   }
+  .about .title {
+    font-size: 1.5rem;
+  }
   .card {
     grid-row: auto;
     grid-column: auto;
@@ -375,6 +387,15 @@ nav {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .landing-page h1 {
+    font-size: 1.5rem;
+  }
+  .landing-page h2 {
+    font-size: 1rem;
+  }
+}
+
 .product {
   height: auto;
   display: -ms-grid;
@@ -410,6 +431,9 @@ nav {
   }
   .product img {
     display: none;
+  }
+  .product h1 {
+    font-size: 50%;
   }
 }
 
@@ -475,6 +499,9 @@ nav {
 @media screen and (max-width: 900px) {
   .review {
     width: 100%;
+  }
+  .review .profile {
+    height: 10vh;
   }
   .testimonials h1 {
     font-size: 2.5rem;

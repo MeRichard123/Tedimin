@@ -62,4 +62,13 @@ nav {
 .nav__cart {
   margin: 0 1.2rem 0 0;
 }
+
+@media screen and (max-width: 500px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 /*# sourceMappingURL=main.css.map */
