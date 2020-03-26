@@ -1,0 +1,42 @@
+.testimonials {
+  h1 {
+    font-size: 4rem;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.review {
+  .profile {
+    border-radius: 50%;
+  }
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  border: 2px solid black;
+  width: 70%;
+  border-radius: 25px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  .name {
+    display: grid;
+    font-size: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .date {
+    color: gray;
+    margin-bottom: 2.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .review {
+    width: 100%;
+  }
+  .testimonials h1 {
+    font-size: 2.5rem;
+  }
+}

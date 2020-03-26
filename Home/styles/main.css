@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans|Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2.5rem;
+}
+
+.nav__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__logo h2 {
+  font-family: "Alegreya Sans", sans-serif;
+  color: white;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__item a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav__item a:hover {
+  border-top: white 3px solid;
+}
+
+.nav__cart {
+  margin: 0 1.2rem 0 0;
+}
+
+.scrollarrow {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: translateY(-80px) translateX(-50%) rotate(45deg);
+          transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+
+.scrollarrow span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  -webkit-animation: animate 1.5s linear infinite;
+          animation: animate 1.5s linear infinite;
+}
+
+.scrollarrow span:nth-child(1) {
+  -webkit-transform: translate(-15px, -15px);
+          transform: translate(-15px, -15px);
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+
+.scrollarrow span:nth-child(2) {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+
+.scrollarrow span:nth-child(3) {
+  -webkit-transform: translate(15px, 15px);
+          transform: translate(15px, 15px);
+  -webkit-animation-delay: -0s;
+          animation-delay: -0s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+  25% {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  50%,
+  100% {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+  25% {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  50%,
+  100% {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
+}
+
+.landing-page {
+  position: relative;
+  height: 94vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("../../assets/img/computer-desk-laptop-stethoscope-48604.png");
+  background-size: cover;
+}
+
+.landing-page h1 {
+  font-size: calc(4.5rem + 1vw);
+}
+
+.landing-page h2 {
+  font-size: calc(3rem + 1vw);
+}
+
+.scrollarrow {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-transform: translateY(-80px) translateX(-50%) rotate(45deg);
+          transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+
+.scrollarrow span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  -webkit-animation: animate 1.5s linear infinite;
+          animation: animate 1.5s linear infinite;
+}
+
+.scrollarrow span:nth-child(1) {
+  -webkit-transform: translate(-15px, -15px);
+          transform: translate(-15px, -15px);
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+
+.scrollarrow span:nth-child(2) {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+
+.scrollarrow span:nth-child(3) {
+  -webkit-transform: translate(15px, 15px);
+          transform: translate(15px, 15px);
+  -webkit-animation-delay: -0s;
+          animation-delay: -0s;
+}
+
+@keyframes animate {
+  0% {
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+  25% {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+  50%,
+  100% {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
+}
+
+.about {
+  height: 120vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.title {
+  font-size: 4rem;
+  margin: 5rem 0 3.5rem 0;
+}
+
+.card-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.card {
+  width: 80%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.25);
+}
+
+.card h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 1.2rem 0 1.2rem 0;
+}
+
+.card img {
+  background: #515151;
+  padding: 1.5rem;
+}
+
+.card p {
+  width: 80%;
+  font-size: 1.2rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  background: #515151;
+  height: auto;
+  padding: 1.5rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.btn:hover {
+  -webkit-animation: bounce 0.5s infinite alternate;
+          animation: bounce 0.5s infinite alternate;
+}
+
+@media screen and (max-width: 700px) {
+  .about {
+    height: auto;
+  }
+  .card {
+    grid-row: auto;
+    grid-column: auto;
+    margin-bottom: 1.5rem;
+  }
+  .card-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 876px) {
+  .landing-page h1 {
+    font-size: 2.5rem;
+  }
+  .landing-page h2 {
+    font-size: 2rem;
+  }
+}
+
+.product {
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  padding: 2.5rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.product img {
+  height: 100vh;
+}
+
+.product .text {
+  width: 80%;
+  margin: auto;
+}
+
+.product .text h1 {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.product .text p {
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .product {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .product img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .text {
+    width: 100%;
+  }
+}
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials h1 {
+  font-size: 4rem;
+}
+
+.review {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15rem 1fr;
+      grid-template-columns: 15rem 1fr;
+  border: 2px solid black;
+  width: 70%;
+  border-radius: 25px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+}
+
+.review .profile {
+  border-radius: 50%;
+}
+
+.review .name {
+  display: -ms-grid;
+  display: grid;
+  font-size: 1.5rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.review .date {
+  color: gray;
+  margin-bottom: 2.5rem;
+}
+
+.review p {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .review {
+    width: 100%;
+  }
+  .testimonials h1 {
+    font-size: 2.5rem;
+  }
+}
+
+footer {
+  color: white;
+  background: #515151;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.2rem;
+  margin-top: auto;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+}
+/*# sourceMappingURL=main.css.map */

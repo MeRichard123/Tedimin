@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans|Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2.5rem;
+}
+
+.nav__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__logo h2 {
+  font-family: "Alegreya Sans", sans-serif;
+  color: white;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__item a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav__item a:hover {
+  border-top: white 3px solid;
+}
+
+.nav__cart {
+  margin: 0 1.2rem 0 0;
+}
+/*# sourceMappingURL=main.css.map */
