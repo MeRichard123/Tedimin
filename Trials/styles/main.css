@@ -357,6 +357,10 @@ footer a:hover {
   }
   .landing-page h1 {
     font-size: 2rem;
+    text-align: center;
+  }
+  .landing-page {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
