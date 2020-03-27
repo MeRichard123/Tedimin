@@ -13,6 +13,6 @@ Science project, website for a made up drug called:
 - [x] Use HTML5 semantics
 - [x] check colour contrast
 - [x] make sure :focus is clear
-- [ ] Add lables to forms       _Didn't do as it looks aweful_
-- [ ] add titles to anchor tags  _I didn't like the way lables looked so I did aria-label instead_
+- [ ] Add lables to forms       (_Didn't do as it looks aweful_)
+- [ ] add titles to anchor tags (_I didn't like the way lables looked so I did aria-label instead_)
 - [x] alts for images
