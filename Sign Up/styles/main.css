@@ -59,8 +59,19 @@ nav {
   border-top: white 3px solid;
 }
 
+.nav__item a:focus {
+  outline: none;
+  border-top: white 3px solid;
+}
+
 .nav__cart {
   margin: 0 1.2rem 0 0;
+}
+
+.nav__cart:focus {
+  border: 2px solid white;
+  outline: none;
+  border-radius: 25%;
 }
 
 @media screen and (max-width: 500px) {
@@ -151,9 +162,14 @@ form .submit-btn:hover {
   background-color: #515151;
 }
 
-input:focus,
-textarea:focus {
+form .submit-btn:focus {
+  background-color: #515151;
   outline: none;
+}
+
+.field:focus,
+.field__message:focus {
+  border: 5px solid #515151;
 }
 
 footer {

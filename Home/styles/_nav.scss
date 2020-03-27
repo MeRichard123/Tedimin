@@ -29,9 +29,18 @@ nav {
   &:hover {
     border-top: white 3px solid;
   }
+  &:focus {
+    outline: none;
+    border-top: white 3px solid;
+  }
 }
 .nav__cart {
   margin: 0 1.2rem 0 0;
+  &:focus {
+    border: 2px solid white;
+    outline: none;
+    border-radius: 25%;
+  }
 }
 
 @media screen and (max-width: 500px) {

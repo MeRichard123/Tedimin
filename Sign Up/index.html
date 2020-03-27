@@ -13,11 +13,15 @@
         <h2>Tedimin</h2>
       </div>
       <ul class="nav__items">
-        <li class="nav__item"><a href="../index.html">Home</a></li>
-        <li class="nav__item"><a href="../Trials/">Trials</a></li>
-        <li class="nav__item"><a href="/">Sign Up</a></li>
+        <li class="nav__item">
+          <a href="../index.html" aria-label="Home">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Trials/" aria-label="Trials">Trials</a>
+        </li>
+        <li class="nav__item"><a href="/" aria-label="Sign up">Sign Up</a></li>
       </ul>
-      <a href="#" class="nav__cart"
+      <a href="#" class="nav__cart" title="cart"
         ><img src="../assets/icons/cart.svg" alt=""
       /></a>
     </nav>
@@ -38,18 +42,21 @@
           placeholder="Name:"
           class="field"
           name="Name"
+          title="Name"
           required
         />
         <input
           type="email"
           name="_replyto"
           placeholder="Email:"
+          title="Email"
           class="field"
           required
         />
         <textarea
           name="message"
           id=""
+          title="Message"
           cols="30"
           rows="10"
           placeholder="Message:"
