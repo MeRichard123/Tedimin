@@ -8,3 +8,11 @@ Your challenge is to design a web page that explains how new drugs are tested an
 Science project, website for a made up drug called:
 ## Tedimin!
 
+## Accessibility
+
+[x] Use HTML5 semantics
+[x] check colour contrast
+[x] make sure :focus is clear
+[] Add lables to forms       // Didn't do as it looks aweful
+[] add titles to anchor tags  // I didn't like the way lables looked so i did aria-label instead
+[x] alts for images
