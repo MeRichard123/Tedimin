@@ -33,12 +33,19 @@
         avoid bias.
       </p>
       <form action="https://formspree.io/mvoqybry" method="POST">
-        <input type="text" placeholder="Name:" class="field" />
+        <input
+          type="text"
+          placeholder="Name:"
+          class="field"
+          name="Name"
+          required
+        />
         <input
           type="email"
           name="_replyto"
           placeholder="Email:"
           class="field"
+          required
         />
         <textarea
           name="message"
@@ -49,7 +56,7 @@
           aria-placeholder="message text"
           class="field__message"
         ></textarea>
-        <input type="submit" value="Submit" class="submit-btn" />
+        <input type="submit" value="Submit" class="submit-btn" name="submit" />
       </form>
     </main>
     <footer>
