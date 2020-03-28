@@ -1,7 +1,7 @@
 # Contents Page
-- [About](#Biology- Medicine and drugs)  
+- [About](#Biology)  
 - [Accessibility](#Accessibility)
-- [Meta Tags](#Meta Tags)  
+- [Meta Tags](#Meta)  
 - [SEO](#SEO) 
 
 
