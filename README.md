@@ -5,6 +5,14 @@ Your challenge is to design a web page that explains how new drugs are tested an
 
 - You must include: what stages there are in testing and trailing a new drug, information and pictures
 
-Science project, website for a made up drug called:
-## Tedimin!
+> Science project, website for a made up drug called:
+> **Tedimin!**
 
+## Accessibility
+
+- [x] Use HTML5 semantics
+- [x] check colour contrast
+- [x] make sure :focus is clear
+- [ ] Add lables to forms       (_Didn't do as it looks aweful_)
+- [ ] add titles to anchor tags (_I didn't like the way lables looked so I did aria-label instead_)
+- [x] alts for images
