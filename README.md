@@ -3,6 +3,7 @@
 - [Accessibility](#Accessibility)
 - [Meta Tags](#Meta-Tags)  
 - [SEO](#SEO) 
+- [Favicon](#Favicon)
 
 
 
