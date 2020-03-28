@@ -31,3 +31,13 @@ To fully commit to SEO (Search Engine Optimization); The following meta tags wer
 - Robots were included to allow search engines to find the site if searched for and which pages to display.
 - A Description is the text you see in a search engine before you click a site
 - A Code Author was added
+
+## Favicon 
+
+To give the site an icon next to the title in the tab section a favicon was added:
+```HTML
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon" />
+```
+- a *shortcut icon* is the one you get when you add the page to saved pages in your browser
+- The *icon* is the icon in the tab on the browser
