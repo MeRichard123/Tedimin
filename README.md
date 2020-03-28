@@ -16,3 +16,18 @@ Your challenge is to design a web page that explains how new drugs are tested an
 - [ ] Add lables to forms       (_Didn't do as it looks aweful_)
 - [ ] add titles to anchor tags (_I didn't like the way lables looked so I did aria-label instead_)
 - [x] alts for images
+
+## Meta Tags
+
+To fully commit to SEO (Search Engine Optimization); The following meta tags were added: 
+```HTML
+    <meta name="author" content="Richard C" />
+    <meta
+      name="description"
+      content="Website for a School Science Project about a made up medication called Tedimin"
+    />
+    <meta name="robots" content="index,follow" />
+```
+- Robots were included to allow search engines to find the site if searched for and which pages to display.
+- A Description is the text you see in a search engine before you click a site
+- A Code Author was added
