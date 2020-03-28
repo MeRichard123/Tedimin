@@ -32,6 +32,9 @@ To fully commit to SEO (Search Engine Optimization); The following meta tags wer
 - A Description is the text you see in a search engine before you click a site
 - A Code Author was added
 
+#### SEO
+_Search engine optimization_ is the process of increasing the quality and quantity of website traffic by increasing the visibility of a website or a web page to users of a web search engine. SEO refers to the improvement of unpaid results and excludes direct traffic/visitors and the purchase of paid placemen
+
 ## Favicon 
 
 To give the site an icon next to the title in the tab section a favicon was added:
