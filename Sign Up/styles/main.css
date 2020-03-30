@@ -113,6 +113,12 @@ main h1 {
   text-align: center;
 }
 
+main h2 {
+  margin: 1.5rem 0;
+  padding: 0 2.5rem;
+  text-align: center;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
