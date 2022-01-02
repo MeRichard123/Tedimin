@@ -74,11 +74,17 @@
       </form>
     </main>
     <footer>
-      <h3>2020 &copy; Science Project</h3>
+      <h3><span class="footer-date">2020</span> &copy; Science Project</h3>
       <h3>
         Made with ❤ by
         <a href="https://richardcoric.netlify.com/">Richard Coric</a>
       </h3>
     </footer>
   </body>
+  <script>
+    window.addEventListener("load", ()=> {
+      const date = document.querySelector(".footer-date");
+      date.innerHTML = new Date().getFullYear();
+    });
+  </script>
 </html>
